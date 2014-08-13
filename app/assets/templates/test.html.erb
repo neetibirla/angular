@@ -24,6 +24,12 @@
 						{{"----------"}}
 						{{system.code}}
 					</li>
+					<formname="systemForm">
+						<div><label>MVPD : {{ mvpd.name }}</label></div>
+						<div>Name<input type="name" ng-model="SystemCtrl.system.name" /></div>
+						<div>Code<input type="code" ng-model="SystemCtrl.system.code" /></div>
+						<!-- Need to submit details to the APIs -->
+						<input type="submit"value="Submit" /></form>
 				</div>
 			</section>
 			
