@@ -20,6 +20,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bower-rails'
 gem 'angular-rails-templates'
+gem "therubyracer"
+gem "less-rails"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
