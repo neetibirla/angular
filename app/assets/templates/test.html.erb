@@ -17,8 +17,13 @@
 				<div class="panel" ng-show="panel.isSelected(2)">
 					<p>None yet</p>
 				</div>
-				<div class="panel" ng-show="panel.isSelected(3)">
-					<p>Need to add</p>
+				<div class="panel" ng-show="panel.isSelected(3)" ng-controller="SystemCtrl">
+					<!-- <p>Need to add</p> -->
+					<li ng-repeat="system in systems">
+						{{system.name}}
+						{{"----------"}}
+						{{system.code}}
+					</li>
 				</div>
 			</section>
 			
