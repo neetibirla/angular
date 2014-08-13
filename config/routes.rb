@@ -54,6 +54,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   root 'application#index'
+  
+  get 'api/test' => 'test#index'
+  
   get '*path' => 'application#index'
-  get 'test' => 'test#index'
 end
