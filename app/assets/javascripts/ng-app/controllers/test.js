@@ -1,9 +1,9 @@
 angular.module('AngularRails')
-    .controller('TestCtrl', ['$http', function($http){
+    .controller('TestCtrl', ['$http','$scope', function($http, $scope){
     	var list = this;
-    	list.mvpds = [];
+    	$scope.mvpds = [];
     	$http.get('/api/test').success(function(data){
-    		list.mvpds = data;
+    		$scope.mvpds = data;
     	})
     }]
 );
